@@ -1,0 +1,28 @@
+{
+    "splash": {
+        "welcome": "Formula Bir"
+    },
+    "onBoard": {
+        "page1": {
+            "title": "Sürücü Profili",
+            "desc": "Sürücülerin kişisel ve kariyer bilgilerini içeren genel profili."
+        },
+        "page2": {
+            "title": "Kariyer İstatistikleri",
+            "desc": "Sürücülerin elde ettiği başarılar, kazandığı yarışlar, şampiyonluklar ve diğer önemli istatistikleri içeren bilgiler."
+        },
+        "page3": {
+            "title": "Sosyal Medya ve Bağlantılar",
+            "desc": "Sürücünün sosyal medya hesapları, kişisel web sitesi ve diğer bağlantılarını içeren bilgiler ve çok daha fazlası ..."
+        },
+        "getStarted": "Başlarken",
+        "onBoardSubView": {
+            "name": "Adınız",
+            "favoriteDriver": "Favori Sürücünüz",
+            "button": "Kaydet"
+        }
+    },
+    "notFound": "Bulunamadı!",
+    "isValidName": "Lütfen adınızı yazınız.",
+    "isValidFavoriteDriver": "Lütfen favori sürücünüzü yazınız."
+}
