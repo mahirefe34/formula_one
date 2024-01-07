@@ -4,7 +4,7 @@ import 'package:vexana/vexana.dart';
 part 'drivers_response_model.g.dart';
 
 @JsonSerializable()
-class HomeResponseModel extends INetworkModel<HomeResponseModel> {
+class DriverResponseModel extends INetworkModel<DriverResponseModel> {
   @JsonKey(name: 'driverId')
   final String? driverId;
   @JsonKey(name: 'permanentNumber')
@@ -19,7 +19,7 @@ class HomeResponseModel extends INetworkModel<HomeResponseModel> {
   final String? dateOfBirth;
   final String? nationality;
 
-  HomeResponseModel(
+  DriverResponseModel(
       {this.driverId,
       this.permanentNumber,
       this.code,
@@ -30,12 +30,12 @@ class HomeResponseModel extends INetworkModel<HomeResponseModel> {
       this.nationality});
 
   @override
-  HomeResponseModel fromJson(Map<String, dynamic> json) {
-    return _$HomeResponseModelFromJson(json);
+  DriverResponseModel fromJson(Map<String, dynamic> json) {
+    return _$DriverResponseModelFromJson(json);
   }
 
   @override
   Map<String, dynamic>? toJson() {
-    return _$HomeResponseModelToJson(this);
+    return _$DriverResponseModelToJson(this);
   }
 }

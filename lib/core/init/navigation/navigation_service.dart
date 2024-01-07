@@ -1,5 +1,9 @@
+import 'package:formula_one/feature/drivers/view/drivers_view.dart';
+import 'package:formula_one/feature/drivers/view/subview/driver_detail_view.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../feature/auth/onboard/view/onboard_view.dart';
+import '../../../feature/auth/onboard/view/subView/onboard_subview.dart';
 import '../../../feature/auth/splash/view/splash_view.dart';
 
 import '../../constants/enums/navigation_enums.dart';
@@ -14,25 +18,21 @@ class NavigationService {
   NavigationService._init();
 
   final router = GoRouter(routes: [
-    /* GoRoute(
+    GoRoute(
         path: NavigationEnums.splashView.routeName,
         builder: (context, state) => const SplashView()),
-     GoRoute(
+    GoRoute(
         path: NavigationEnums.onBoardView.routeName,
         builder: (context, state) => const OnBoardView()),
     GoRoute(
         path: NavigationEnums.onBoardSubView.routeName,
         builder: (context, state) => const OnBoardSubView()),
     GoRoute(
-        path: NavigationEnums.homeView.routeName,
-        builder: (context, state) => const HomeView()),
+        path: NavigationEnums.driversView.routeName,
+        builder: (context, state) => const DriversView()),
     GoRoute(
-        name: NavigationEnums.homeExploreView.routeName,
-        path:
-            '${NavigationEnums.homeExploreView.routeName}/:horoscopeSign/:horoscopeSignForNetwork',
-        builder: (context, state) => HomeExploreView(
-              horoscopeSign: state.params['horoscopeSign']!,
-              horoscopeSignForNetwork: state.params['horoscopeSignForNetwork']!,
-            )) */
+        name: NavigationEnums.driverDetailView.routeName,
+        path: '${NavigationEnums.driverDetailView.routeName}/:driverId',
+        builder: (context, state) => const DriverDetailView())
   ]);
 }

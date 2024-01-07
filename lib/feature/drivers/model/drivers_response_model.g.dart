@@ -6,8 +6,8 @@ part of 'drivers_response_model.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-HomeResponseModel _$HomeResponseModelFromJson(Map<String, dynamic> json) =>
-    HomeResponseModel(
+DriverResponseModel _$DriverResponseModelFromJson(Map<String, dynamic> json) =>
+    DriverResponseModel(
       driverId: json['driverId'] as String?,
       permanentNumber: json['permanentNumber'] as String?,
       code: json['code'] as String?,
@@ -18,7 +18,8 @@ HomeResponseModel _$HomeResponseModelFromJson(Map<String, dynamic> json) =>
       nationality: json['nationality'] as String?,
     );
 
-Map<String, dynamic> _$HomeResponseModelToJson(HomeResponseModel instance) =>
+Map<String, dynamic> _$DriverResponseModelToJson(
+        DriverResponseModel instance) =>
     <String, dynamic>{
       'driverId': instance.driverId,
       'permanentNumber': instance.permanentNumber,
